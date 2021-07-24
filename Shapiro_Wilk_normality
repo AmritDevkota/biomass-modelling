@@ -1,0 +1,18 @@
+
+	Shapiro-Wilk normality test
+
+data:  biodata[, i]
+W = 0.87298, p-value = 1.021e-08
+
+
+	Shapiro-Wilk normality test
+
+data:  biodata[, i]
+W = 0.93963, p-value = 4.041e-05
+
+
+	Shapiro-Wilk normality test
+
+data:  biodata[, i]
+W = 0.98024, p-value = 0.07492
+

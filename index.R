@@ -268,7 +268,7 @@ list(lm(y ~ x, data = trainData), #Linear form
      y <- c("y")
      x <- c("x", "DH", "D2H", "rDH", "rD2H")
      
-     colour <- c("red", "green", "blue", "cyan", "brown", "yellow", "orange", "black")
+     colour <- c("red", "green", "blue", "cyan", "brown", "yellow", "orange")
      ggplot(trainData, aes(x, y)) + geom_point(size = 2) +
        geom_line(aes(y = predict(model[[1]])), size = 1, colour = colour[1]) +
        geom_line(aes(y = predict(model[[2]])), size = 1, colour = colour[2]) +
@@ -276,8 +276,7 @@ list(lm(y ~ x, data = trainData), #Linear form
        geom_line(aes(y = predict(model[[4]])), size = 1, colour = colour[4]) +
        geom_line(aes(y = predict(model[[5]])), size = 1, colour = colour[5]) +
        geom_line(aes(y = predict(model[[6]])), size = 1, colour = colour[6]) +
-       geom_line(aes(y = predict(model[[7]])), size = 1, colour = colour[7]) +
-       geom_line(aes(y = predict(model[[7]])), size = 1, colour = colour[8])
+       geom_line(aes(y = predict(model[[7]])), size = 1, colour = colour[7])
      
      #Save plot
      dev.copy(tiff, filename="./picture/Model_predictions_vs_data_used_for_model_fitting.tif", width = 7.1, height = 5.5, units = "in", bg = "white", res = 300)

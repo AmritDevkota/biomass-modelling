@@ -1,0 +1,233 @@
+
+Call:
+lm(formula = B ~ D, data = trainData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-180.110  -52.022   -7.663   27.622  308.723 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -123.289     16.246  -7.589 8.23e-12 ***
+D            213.165      8.476  25.150  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 87.88 on 118 degrees of freedom
+Multiple R-squared:  0.8428,	Adjusted R-squared:  0.8414 
+F-statistic: 632.5 on 1 and 118 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D + H, data = trainData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-182.84  -54.83  -12.29   40.82  248.71 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -167.68      22.91  -7.320  3.4e-11 ***
+D             177.07      15.79  11.212  < 2e-16 ***
+H              63.26      23.59   2.682  0.00838 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.66 on 117 degrees of freedom
+Multiple R-squared:  0.8519,	Adjusted R-squared:  0.8493 
+F-statistic: 336.5 on 2 and 117 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D + D^2 + H, data = trainData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-182.84  -54.83  -12.29   40.82  248.71 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -167.68      22.91  -7.320  3.4e-11 ***
+D             177.07      15.79  11.212  < 2e-16 ***
+H              63.26      23.59   2.682  0.00838 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.66 on 117 degrees of freedom
+Multiple R-squared:  0.8519,	Adjusted R-squared:  0.8493 
+F-statistic: 336.5 on 2 and 117 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D * H, data = trainData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-202.820  -20.424   -2.743   17.096  241.283 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    39.92      27.85   1.433  0.15444    
+D             -25.19      24.39  -1.033  0.30398    
+H             -66.27      22.40  -2.959  0.00375 ** 
+D:H           105.21      11.08   9.497 3.58e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 64.52 on 116 degrees of freedom
+Multiple R-squared:  0.9167,	Adjusted R-squared:  0.9145 
+F-statistic: 425.4 on 3 and 116 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D^2 * H, data = trainData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-202.820  -20.424   -2.743   17.096  241.283 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    39.92      27.85   1.433  0.15444    
+D             -25.19      24.39  -1.033  0.30398    
+H             -66.27      22.40  -2.959  0.00375 ** 
+D:H           105.21      11.08   9.497 3.58e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 64.52 on 116 degrees of freedom
+Multiple R-squared:  0.9167,	Adjusted R-squared:  0.9145 
+F-statistic: 425.4 on 3 and 116 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D + D^2 + H^2, data = trainData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-182.84  -54.83  -12.29   40.82  248.71 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -167.68      22.91  -7.320  3.4e-11 ***
+D             177.07      15.79  11.212  < 2e-16 ***
+H              63.26      23.59   2.682  0.00838 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.66 on 117 degrees of freedom
+Multiple R-squared:  0.8519,	Adjusted R-squared:  0.8493 
+F-statistic: 336.5 on 2 and 117 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = B ~ D * H + D^2 * H^2, data = trainData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-202.820  -20.424   -2.743   17.096  241.283 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    39.92      27.85   1.433  0.15444    
+D             -25.19      24.39  -1.033  0.30398    
+H             -66.27      22.40  -2.959  0.00375 ** 
+D:H           105.21      11.08   9.497 3.58e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 64.52 on 116 degrees of freedom
+Multiple R-squared:  0.9167,	Adjusted R-squared:  0.9145 
+F-statistic: 425.4 on 3 and 116 DF,  p-value: < 2.2e-16
+
+
+Formula: B ~ a * D * H^b
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a  58.2194     5.2612   11.07   <2e-16 ***
+b   1.3091     0.1053   12.43   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 67.2 on 118 degrees of freedom
+
+Number of iterations to convergence: 10 
+Achieved convergence tolerance: 1.76e-06
+
+
+Formula: B ~ exp(a * (D^2 * H)^b)
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a 4.180936   0.076818   54.43   <2e-16 ***
+b 0.135579   0.006178   21.95   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 63.72 on 118 degrees of freedom
+
+Number of iterations to convergence: 3 
+Achieved convergence tolerance: 4.176e-07
+
+
+Formula: B ~ a + b * log(D) + c * log(H)
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a   152.99      17.40   8.794 1.48e-14 ***
+b   226.21      33.62   6.728 6.69e-10 ***
+c    31.36      50.44   0.622    0.535    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 130.1 on 117 degrees of freedom
+
+Number of iterations to convergence: 1 
+Achieved convergence tolerance: 6.242e-09
+
+
+Formula: B ~ a + b * log(D^2 * H)
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a  139.177     13.431   10.36   <2e-16 ***
+b   93.678      6.276   14.93   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 130.4 on 118 degrees of freedom
+
+Number of iterations to convergence: 1 
+Achieved convergence tolerance: 2.563e-08
+
+
+Formula: B ~ a * D^b
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a  69.0085     7.4969   9.205 1.52e-15 ***
+b   1.8929     0.1049  18.047  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 76.39 on 118 degrees of freedom
+
+Number of iterations to convergence: 7 
+Achieved convergence tolerance: 1.074e-06
+
+
+Formula: B ~ a * (exp(b * D))
+
+Parameters:
+  Estimate Std. Error t value Pr(>|t|)    
+a 39.58227    4.95538   7.988 1.02e-12 ***
+b  0.87598    0.04353  20.126  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 81.39 on 118 degrees of freedom
+
+Number of iterations to convergence: 11 
+Achieved convergence tolerance: 3.433e-06
+
